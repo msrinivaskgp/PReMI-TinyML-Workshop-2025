@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+output/*.pickle
+output/*.csv
+
+.vscode/
+.DS_Store
+Thumbs.db
