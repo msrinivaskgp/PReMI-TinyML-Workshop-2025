@@ -92,9 +92,9 @@ config.py
 Example configuration:
 
 ```python
-Terms = 40      # Number of Boolean terms per tree
-trees = 400     # Number of trees in the forest
-n_class = 10    # Number of output classes
+Terms = 8      # Number of Boolean terms per tree
+trees = 100     # Number of trees in the forest
+n_class = 2    # Number of output classes
 ```
 
 ---
