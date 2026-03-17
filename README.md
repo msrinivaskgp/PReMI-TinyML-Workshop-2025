@@ -135,16 +135,6 @@ This evaluation computes:
 
 ---
 
-## Full Pipeline
-
-Run the entire training and evaluation pipeline:
-
-```bash
-python main.py
-```
-
----
-
 ## Output
 
 Results and intermediate experiment files are stored in:
