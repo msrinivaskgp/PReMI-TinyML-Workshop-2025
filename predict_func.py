@@ -29,15 +29,13 @@ def profile_function(func, *args, **kwargs):
 
 # Load the saved result from the file
 
-with open('/home/srinivas/Documents/CTRF-main/CTRF-main/CTRF/CTRF/CTRF/Output/dt1.pickle', 'rb') as file:
+with open('/home/srinivas/Documents/PReMI/output/dt1.pickle', 'rb') as file:
     dt = pickle.load(file)
 # Load the saved result from the file
-with open('/home/srinivas/Documents/CTRF-main/CTRF-main/CTRF/CTRF/CTRF/Output/test1.pickle', 'rb') as file:
+with open('/home/srinivas/Documents/PReMI/output/test1.pickle', 'rb') as file:
     winetest = pickle.load(file)
-with open('/home/srinivas/Documents/CTRF-main/CTRF-main/CTRF/CTRF/CTRF/Output/bf1.pickle', 'rb') as file:
+with open('/home/srinivas/Documents/PReMI/output/bf1.pickle', 'rb') as file:
     bf = pickle.load(file)
-with open('/home/srinivas/Documents/CTRF-main/CTRF-main/CTRF/CTRF/CTRF/Output/eo1.pickle', 'rb') as file:
-    mt = pickle.load(file)
 
 pima = np.asarray(winetest)
 [P,Q] = pima.shape
@@ -130,7 +128,7 @@ with open(file_path, 'a', newline='') as csvfile:
     csv_writer.writerow(new_data)
 """
 import csv
-file_path = '/home/srinivas/Documents/CTRF-main/CTRF-main/CTRF/CTRF/CTRF/Output/file.csv'  # Replace this with the actual path to your CSV file
+file_path = '/home/srinivas/Documents/PReMI/output/file.csv'  # Replace this with the actual path to your CSV file
 with open(file_path, 'a', newline='') as csvfile:
     csv_writer = csv.writer(csvfile)
     csv_writer.writerow([acc1,acc2,acc_3,acc_5,sum(hist_node)-sum(hist_leaf),sum(var1)-sum(var2),and_1,or_1,and_3,or_3,count_s1,count_d1,count_c1,count_s3,count_d3,count_c3,time1,time3,path_counts1, path_lengths1,path_counts3, path_lengths3,node_counts1,node_counts3])

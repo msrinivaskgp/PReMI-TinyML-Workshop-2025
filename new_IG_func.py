@@ -8,7 +8,7 @@ def tree_table(wine_list1, sublist_size, data, max_feature, max_value, node_clas
     #global data, max_feature, max_value, node_classes, parent, left_child, right_child, buff2
 
     data[0], data[1], max_feature[0], max_value[0] = node(wine_list1)
-    Minleaf = sublist_size * 0.1
+    Minleaf = sublist_size * 0.4
 
     for i in range(buff2):
         if len(data[i]) > Minleaf:

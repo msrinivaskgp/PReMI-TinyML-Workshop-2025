@@ -45,7 +45,7 @@ class bds_Func:
         obdd_path_counts = []
         obdd_avg_path_lengths = []
 
-        for v in range(int(0.01*len(winetest))):
+        for v in range(int(len(winetest))):
             count_list = []
             count_s1 = 0
             count_d1 = 0
@@ -204,7 +204,7 @@ class bds_Func:
         obdd_path_counts = []
         obdd_avg_path_lengths = []
         #winetest = wine1
-        for v in range(int(0.01*len(winetest))):
+        for v in range(int(len(winetest))):
             count_list = []
             count1 = 0
             count2 = 0

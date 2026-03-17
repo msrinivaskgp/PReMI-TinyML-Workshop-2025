@@ -31,7 +31,7 @@ target = pima[:, -1]
 pfeatures = pima[:, 0:Q - 1]
 times = 1
 
-output_paths = [f'/home/srinivas/Documents/PReMI/Output/{{}}{i + 1}.pickle' for i in range(5)]
+output_paths = [f'/home/srinivas/Documents/PReMI/output/{{}}{i + 1}.pickle' for i in range(5)]
 
 for f in range(times):
     k_count = 0
